@@ -1,19 +1,22 @@
 <template>
   <main>
     <LandingSection />
-    <AboutRow />
+    <AboutSection />
+    <PartnersSection />
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import LandingSection from "./components/LandingSection.vue";
-import AboutRow from "./components/AboutRow.vue";
+import AboutSection from "./components/AboutSection.vue";
+import PartnersSection from "./components/PartnersSection.vue";
 export default defineComponent({
   name: "App",
   components: {
     LandingSection,
-    AboutRow,
+    AboutSection,
+    PartnersSection,
   },
 });
 </script>
