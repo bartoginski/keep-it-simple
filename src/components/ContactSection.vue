@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="contact__content">
         <h2 class="contact__title">Contact Us!</h2>
@@ -29,7 +29,7 @@ export default {};
 
 .contact {
   background: $color-orange;
-  padding: 60px 0;
+  padding: 80px 0;
 
   &__mail {
     font-size: 1.875rem;

@@ -1,8 +1,8 @@
 <template>
   <div class="landing container">
     <nav class="landing__nav">
-      <a href="#" class="landing__nav_link">Why?</a>
-      <a href="#" class="landing__nav_link">Contact</a>
+      <a href="#about" class="landing__nav_link">Why?</a>
+      <a href="#contact" class="landing__nav_link">Contact</a>
     </nav>
     <section class="landing__main">
       <div class="landing__content">
