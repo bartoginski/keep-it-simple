@@ -34,6 +34,11 @@ export default {};
   &__mail {
     font-size: 1.875rem;
     margin: 20px 0;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__plane {
