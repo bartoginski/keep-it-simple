@@ -1,7 +1,7 @@
 <template>
   <section class="about">
     <div class="container about__grid">
-      <div class="about__col">
+      <div class="about__col about__col_first">
         <img
           class="about__image"
           src="../assets/low_price.png"
@@ -25,7 +25,7 @@
           magnaboris magn.
         </p>
       </div>
-      <div class="about__col">
+      <div class="about__col about__col_last">
         <img
           class="about__image"
           src="../assets/bugless.png"
@@ -48,8 +48,8 @@ export default {};
 @import "../styles/variables.scss";
 
 .about {
-  @media screen and (min-width: 1024px) {
-    background: linear-gradient(90deg, #eec373 50%, #54bab9 50%);
+  @media screen and (min-width: 740px) {
+    background: linear-gradient(90deg, $color-orange 50%, $color-mint 50%);
   }
 
   &__grid {
@@ -67,8 +67,37 @@ export default {};
     align-items: center;
     padding: 0 30px 40px 30px;
     text-align: center;
+    position: relative;
+    z-index: 10;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      top: 0;
+      left: -20px;
+      right: -20px;
+      z-index: -1;
+
+      @media screen and (min-width: 740px) {
+        content: none;
+      }
+    }
+    &_first {
+      &::before {
+        background: $color-orange;
+      }
+    }
     &_middle {
       background: $color-white;
+      &::before {
+        background: $color-white;
+      }
+    }
+    &_last {
+      &::before {
+        background: $color-mint;
+      }
     }
   }
 
