@@ -64,6 +64,17 @@
   &__image {
     filter: grayscale(100%);
     opacity: 0.7;
+
+    -webkit-transition: all 0.6s 0s ease;
+    -moz-transition: all 0.6s 0s ease;
+    -o-transition: all 0.6s 0s ease;
+    transition: all 0.6s 0s ease;
+    cursor: pointer;
+
+    &:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
   }
 }
 </style>
