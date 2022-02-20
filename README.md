@@ -1,4 +1,10 @@
 # keep-it-simple
+Really simple static website written in Vue + SCSS.
+
+>_"Keep Things Simple"_ ~ Me
+
+Check on: [https://bartoginski.github.io/keep-it-simple](https://bartoginski.github.io/keep-it-simple)
+
 
 ## Project setup
 ```
@@ -20,5 +26,3 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
